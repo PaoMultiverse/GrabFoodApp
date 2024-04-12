@@ -15,12 +15,16 @@ function Navbar(){
     window.addEventListener("scroll",changeBackGround)
 
     return (
-        <div className={color ? "container-navbar active" : "container-navbar"}>
+        <div 
+            className={color ? "container-navbar active" : "container-navbar"}
+            style={{ filter: color ? 'none' : 'grayscale(100%)' }}>
+                
             <div className="headerContainer p-3 container-sm d-flex justify-content-between align-items-center">
             <div className="logo-box">
                 <img 
                     className="logoApp" 
                     src= {color ? logo1:logo2} 
+                    style={{ filter: color ? 'none' : 'grayscale(100%)' }}
                     alt="" />
             </div>
 
