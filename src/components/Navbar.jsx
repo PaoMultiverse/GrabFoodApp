@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./StyleSheet.css";
 import logo1 from "../assets/logo-grabfood.svg" 
 import logo2 from "../assets/logo-grabfood-white.svg" 
 function Navbar(){
@@ -16,7 +16,7 @@ function Navbar(){
 
     return (
         <div 
-            className={color ? "container-navbar active" : "container-navbar"}
+            className={color ? "container-navbar shadow active" : "container-navbar"}
             style={{ filter: color ? 'none' : 'grayscale(100%)' }}>
                 
             <div className="headerContainer p-3 container-sm d-flex justify-content-between align-items-center">

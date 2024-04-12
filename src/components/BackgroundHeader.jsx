@@ -1,4 +1,4 @@
-import "./Navbar.css"
+import "./StyleSheet.css"
 
 function BackgroundHeader(){
     return (
