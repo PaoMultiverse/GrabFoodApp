@@ -24,7 +24,7 @@ function Navbar(){
             <div className="headerContainer p-3 container-sm d-flex justify-content-between align-items-center">
             
             <div className="logo-box">
-                <Link to="/"><img 
+                <Link to="/GrabFoodApp"><img 
                     className="logoApp" 
                     src= {color ? logo1:logo2} 
                     style={{ filter: color ? 'none' : 'grayscale(100%)' }}
