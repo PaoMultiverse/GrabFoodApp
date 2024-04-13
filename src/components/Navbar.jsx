@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+
 import "./StyleSheet.css";
 import logo1 from "../assets/logo-grabfood.svg" 
 import logo2 from "../assets/logo-grabfood-white.svg" 
+import { Link } from "react-router-dom";
 function Navbar(){
 
     const[color,setColor]=useState(false)
@@ -20,12 +22,13 @@ function Navbar(){
             style={{ filter: color ? 'none' : 'grayscale(100%)' }}>
                 
             <div className="headerContainer p-3 container-sm d-flex justify-content-between align-items-center">
+            
             <div className="logo-box">
-                <img 
+                <Link to="/"><img 
                     className="logoApp" 
                     src= {color ? logo1:logo2} 
                     style={{ filter: color ? 'none' : 'grayscale(100%)' }}
-                    alt="" />
+                    alt="" /></Link>
             </div>
 
             <div className="btn-group">

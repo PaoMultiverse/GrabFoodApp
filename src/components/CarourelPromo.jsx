@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import "./StyleSheet.css"
@@ -105,7 +106,7 @@ function CarourelPromo(){
             </Carousel>
           </div>
           <div className='show-all-promo container'>
-            <strong>See all promotions</strong>
+            <Link id='a' to='/all-promotions'><strong id>See all promotions</strong></Link>
           </div>
         </>
       )
