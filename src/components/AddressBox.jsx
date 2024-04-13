@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./StyleSheet.css"
-
+import icLocate from "../assets/icon-locate.png"
+import icGeoBtn from "../assets/icon-geo-button.svg"
 function AddressBox({ setAddressValue }) {
     const [tempAddress, setTempAddress] = useState('');
 
@@ -21,7 +22,7 @@ function AddressBox({ setAddressValue }) {
                             <h5 id="af">Good Afternoon</h5>
                             <h1 id="where">Where should we deliver your food today?</h1>
                             <div>
-                                <img id="location" src="./src/assets/icon-locate.png" alt="Location" />
+                                <img id="location" src={icLocate} alt="Location" />
                                 <input 
                                     id="search-input" 
                                     placeholder="Nhập địa chỉ của bạn"
@@ -29,7 +30,7 @@ function AddressBox({ setAddressValue }) {
                                     value={tempAddress}
                                     onChange={handleInputChange}
                                 />
-                                <img id="des" src="./src/assets/icon-geo-button.svg" alt="Geo Button" />
+                                <img id="des" src={icGeoBtn} alt="Geo Button" />
                             </div>
                             <div>
                                 <button type="button" className="btn btn-search" onClick={handleSearch}>Tìm kiếm</button>

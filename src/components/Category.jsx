@@ -1,92 +1,93 @@
-import CateDetail from "./CateDetail";
 
+import CateDetail from "./CateDetail";
+import ItemCateImage from "./ItemCateImg";
 
 function Category(){
 
     const cateData = [
         {
             id: 1,
-            imageUrl:"./src/assets/cateFood/cate1.webp" ,
+            imageUrl:"cate1" ,
             name:"Hủ tiếu",
         },
         {
             id: 2,
-            imageUrl:"./src/assets/cateFood/cate2.webp" ,
+            imageUrl:"cate2" ,
             name:"Pizza",
         },
         {
             id: 3,
-            imageUrl:"./src/assets/cateFood/cate3.webp" ,
+            imageUrl:"cate3" ,
             name:"Cháo",
         },
         {
             id: 4,
-            imageUrl:"./src/assets/cateFood/cate4.webp" ,
+            imageUrl:"cate4" ,
             name:"Rau trộn",
         },
         {
             id: 5,
-            imageUrl:"./src/assets/cateFood/cate5.webp" ,
+            imageUrl:"cate5" ,
             name:"Trà sữa",
         },
         {
             id: 6,
-            imageUrl:"./src/assets/cateFood/cate6.webp" ,
+            imageUrl:"cate6" ,
             name:"Hiso Party",
         },
         {
             id: 7,
-            imageUrl:"./src/assets/cateFood/cate7.webp" ,
+            imageUrl:"cate7" ,
             name:"Mì Ý",
         },
         {
             id: 8,
-            imageUrl:"./src/assets/cateFood/cate8.webp" ,
+            imageUrl:"cate8" ,
             name:"Weekend Treats",
         },
         {
             id: 9,
-            imageUrl:"./src/assets/cateFood/cate9.webp" ,
+            imageUrl:"cate9" ,
             name:"Bánh mì",
         },
         {
             id: 10,
-            imageUrl:"./src/assets/cateFood/cate10.webp" ,
+            imageUrl:"cate10" ,
             name:"Cơm",
         },
         {
             id: 11,
-            imageUrl:"./src/assets/cateFood/cate11.webp" ,
+            imageUrl:"cate11" ,
             name:"Gà rán - Burger",
         },
         {
             id: 12,
-            imageUrl:"./src/assets/cateFood/cate12.webp" ,
+            imageUrl:"cate12" ,
             name:"Thịt",
         },
         {
             id: 13,
-            imageUrl:"./src/assets/cateFood/cate13.webp" ,
+            imageUrl:"cate13" ,
             name:"Gà Rán",
         },
         {
             id: 14,
-            imageUrl:"./src/assets/cateFood/cate14.webp" ,
+            imageUrl:"cate14" ,
             name:"Đồ uống lạnh",
         },
         {
             id: 15,
-            imageUrl:"./src/assets/cateFood/cate15.webp" ,
+            imageUrl:"cate15" ,
             name:"Ăn vặt",
         },
         {
             id: 16,
-            imageUrl:"./src/assets/cateFood/cate16.webp" ,
+            imageUrl:"cate16" ,
             name:"Gà",
         },
         {
             id: 17,
-            imageUrl:"./src/assets/cateFood/cate1.webp" ,
+            imageUrl:"cate17" ,
             name:"Cơm tấm",
         },
     ]
@@ -94,7 +95,7 @@ function Category(){
     const cate = cateData.map(
         (item) => <CateDetail
             name={item.name}
-            url={item.imageUrl}
+            url={ItemCateImage[item.imageUrl]}
     />)
     return(
         <>

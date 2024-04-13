@@ -3,6 +3,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import "./StyleSheet.css"
 import PromoFood from './PromoFood';
+import PromoFoodList from './PromoFoodList';
+
 function CarourelPromo(){
     const responsive = {
         superLargeDesktop: {
@@ -29,7 +31,7 @@ function CarourelPromo(){
           id:1,
           name: "Cơm thập cẩm",
           type: "Cơm",
-          imageUrl:"./src/assets/promoFood/food1.jpg",
+          imageUrl:"food1",
           rate: "4.2",
           time:"20 phút",
           km: "2.3 km"
@@ -38,7 +40,7 @@ function CarourelPromo(){
           id:2,
           name: "Bánh trứng",
           type: "Bánh mặn",
-          imageUrl:"./src/assets/promoFood/food2.jpg",
+          imageUrl:"food2",
           rate: "4.6",
           time:"22 phút",
           km: "2.4 km"
@@ -47,7 +49,7 @@ function CarourelPromo(){
           id:3,
           name: "Bánh lọt",
           type: "Chè - Giải nhiệt",
-          imageUrl:"./src/assets/promoFood/food3.jpg",
+          imageUrl:"food3",
           rate: "4.7",
           time:"19 phút",
           km: "1.3 km"
@@ -56,7 +58,7 @@ function CarourelPromo(){
           id:4,
           name: "Pizza Hải Sản",
           type: "Thức ăn nhanh",
-          imageUrl:"./src/assets/promoFood/food4.jpg",
+          imageUrl:"food4",
           rate: "4.2",
           time:"25 phút",
           km: "2.0 km"
@@ -65,7 +67,7 @@ function CarourelPromo(){
           id:5,
           name: "Sushi Cá Hồi",
           type: "Cơm - Đồ Sống",
-          imageUrl:"./src/assets/promoFood/food5.jpg",
+          imageUrl:"food5",
           rate: "4.5",
           time:"35 phút",
           km: "4.1 km"
@@ -73,7 +75,7 @@ function CarourelPromo(){
           id:6,
           name: "Beefsteak Kobe",
           type: "Đồ ăn hảo hạng",
-          imageUrl:"./src/assets/promoFood/food6.jpg",
+          imageUrl:"food6",
           rate: "3.2",
           time:"25 phút",
           km: "3.2 km"
@@ -81,7 +83,7 @@ function CarourelPromo(){
           id:7,
           name: "Bánh xếp chiên Mandu",
           type: "Điểm tâm",
-          imageUrl:"./src/assets/promoFood/food7.jpg",
+          imageUrl:"food7",
           rate: "4.8",
           time:"45 phút",
           km: "5.0 km"
