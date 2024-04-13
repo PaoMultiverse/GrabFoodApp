@@ -112,16 +112,17 @@ span{
     height: fit-content;
 }
 .show-all-promo{
-    border: solid ;
-    border-width: 2px;
+    border: solid 1px  ;
+    border-width: 1px;
     border-radius: 10px;
     width: 100%;
-    padding: 3px;
+    padding: 10px;
     text-align: center;
     margin-block: 20px;
+    color:#b3b3b3;
 }
 .show-all-promo:hover{
-    color:#00B14F;
+    color: #00B14F;;
 }
 
 .container-cate{
@@ -131,5 +132,68 @@ span{
 .Cate{
     width: 23%;
     margin: 1%;
+    
+}
+.image-cate-box{
+    border-radius: 5px;
+    width: 90%;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.image-cate{ 
+    width: 100%;
+}
+.cateLink{
+    text-decoration: none;
+    color: black;
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Chỉ định layout dọc */
+    justify-content: center; /* Căn nội dung theo chiều ngang */
+    align-items: center;
+}
+.name-cate{
+    width: fit-content;
+    margin: auto;
+}
+
+.question{
+    margin-top: 30px;
+}
+.content{
+    margin-top:50px;
+}
+.custom-why-use-list{
+    margin-block: 30px;
+    list-style-type: none;
+}
+.custom-why-use-list li::before{
+    content: "\2713"; /* Mã Unicode của dấu tích */
+    display: inline-block;
+    width: 1em; /* Đảm bảo khoảng cách giữa dấu tích và văn bản */
+    margin-left: -1em;
+    font-weight: 400;
+    color: #00B14F;
+}
+.question-child{
+    margin-block: 30px;
+}
+.answer{
+    margin-block: 30px;
+    border-bottom: solid 1px #b3b3b3;
+}
+.answer-child{
+    margin-block: 20px;
+}
+.btn-see-more-question{
+    border: solid 1px  ;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
     text-align: center;
+    margin-block: 20px;
+    color:#b3b3b3;
+}
+.btn-see-more-question:hover{
+    color: #00B14F;
 }

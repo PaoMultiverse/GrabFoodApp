@@ -105,7 +105,7 @@ function CarourelPromo(){
             </Carousel>
           </div>
           <div className='show-all-promo container'>
-            See all promotions
+            <strong>See all promotions</strong>
           </div>
         </>
       )
